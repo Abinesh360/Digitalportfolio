@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-color: #0d0d0d;
+  background-image: url('backgroundimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark-theme {
+  background-color: #0d0d0d;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #9f59ff;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.hero-section li {
+  display: flex;           /* Use flexbox for label and link alignment */
+  gap: 8px;                /* space between label and link */
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.hero-section .label {
+  flex: 0 0 90px;          /* fixed width for labels */
+  font-weight: bold;
+  text-align: right;       /* align labels to right */
+  color: #ccc;
+  white-space: nowrap;     /* no wrap on label */
+}
+
+.hero-section a {
+  color: #9f59ff;
+  text-decoration: none;
+  word-break: break-word;  /* wrap long links if needed */
+}
+
+.hero-section a:hover {
+  text-decoration: underline;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #4a4452;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.icons a:hover {
+  color: #9f59ff;
+}
+/* Font Awesome Icons for Contact List */
+.hero-section li.email::before {
+  content: "\f0e0"; /* Envelope icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #9f59ff;
+}
+
+.hero-section li.linkedin::before {
+  content: "\f08c"; /* LinkedIn icon */
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 10px;
+  color: #0a66c2;
+}
+
+.hero-section li.github::before {
+  content: "\f09b"; /* GitHub icon */
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 10px;
+  color: #ffffff;
+}
+.about-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle transparent background */
+  border: 2px solid #9f59ff; /* purple border */
+  border-radius: 12px;
+  color: #ddd;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  box-shadow: 0 0 20px rgba(159, 89, 255, 0.4);
+}
+
+.about-section h1 {
+  color: #9f59ff;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about-section p {
+  margin-bottom: 20px;
+}
+.projects-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #9f59ff;
+  border-radius: 12px;
+  color: #ddd;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  box-shadow: 0 0 20px rgba(159, 89, 255, 0.4);
+}
+
+.projects-section h1 {
+  color: #9f59ff;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 8px rgba(159, 89, 255, 0.3);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #bb85ff;
+}
+
+.project p {
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #999;
+}
